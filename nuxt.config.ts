@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['stores'],
   },
+  nitro: {
+    preset: 'netlify',
+  },
   plugins: [
     '~/plugins/directive.client.js'
   ],
