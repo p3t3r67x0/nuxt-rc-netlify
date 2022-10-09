@@ -1,6 +1,6 @@
 [build]
   publish = ".dist"
-  command = "npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile && npx pnpm run build"
+  command = "npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile && npm run build"
 
 [build.environment]
   NPM_FLAGS = "--version"
