@@ -1,5 +1,5 @@
 [build]
-  command = "npx pnpm install --shamefully-hoist --store=node_modules/.pnpm-store --frozen-lockfile && npm run build"
+  command = "npx pnpm install --shamefully-hoist --store=node_modules/.pnpm-store --frozen-lockfile --skipLibCheck && npm run build"
 
 [build.environment]
   NPM_FLAGS = "--version"
