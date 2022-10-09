@@ -1,0 +1,29 @@
+query products($first: Int = 100) {
+  products(first: $first, channel: "default-channel") {
+    edges {
+      node {
+        id
+        slug
+        name
+        description
+        thumbnail {
+          url
+        }
+        pricing(address: {country: DE}) {
+          priceRange {
+            start {
+              gross {
+                amount
+                currency
+              }
+              net {
+                amount
+                currency
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

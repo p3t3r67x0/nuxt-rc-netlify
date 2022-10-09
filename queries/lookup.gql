@@ -1,0 +1,29 @@
+query lookup($first: Int = 20, $query: String) {
+  products(first: $first, channel: "default-channel", filter: { search: $query }) {
+    edges {
+      node {
+        id
+        slug
+        name
+        description
+        thumbnail {
+          url
+        }
+        pricing(address: { country: DE }) {
+          priceRange {
+            start {
+              gross {
+                amount
+                currency
+              }
+              net {
+                amount
+                currency
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
