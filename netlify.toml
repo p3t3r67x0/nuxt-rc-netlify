@@ -1,9 +1,6 @@
-[[plugins]]
-  package = "/.netlify/netlify-plugin-pnpm"
-
 [build]
   publish = ".dist"
-  command = "pnpm run build || ( npm install pnpm && pnpm run build )"
+  command = "npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile && pnpm run build"
 
 [build.environment]
   NPM_FLAGS = "--version"
