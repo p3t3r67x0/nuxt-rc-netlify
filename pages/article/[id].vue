@@ -4,6 +4,12 @@
 </div>
 </template>
 
+<script setup>
+useMeta({
+  title: 'Recommandations - Home'
+})
+</script>
+
 <script>
 export default {
   async setup() {

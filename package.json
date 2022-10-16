@@ -7,8 +7,8 @@
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare"
   },
-  "devDependencies": {},
   "dependencies": {
+    "@nuxtjs/html-validator": "^1.1.0",
     "@nuxtjs/tailwindcss": "^5.3.5",
     "@pinia/nuxt": "^0.4.3",
     "@types/node": "^18.8.3",

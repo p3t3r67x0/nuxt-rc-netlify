@@ -1,7 +1,7 @@
 <template>
 <div class="lg:container mx-auto p-3 lg:p-0 lg:mt-28 lg:mb-6 xl:mb-8">
   <Search class="mb-3 lg:mb-6" @query="lookupProducts" />
-  <h2 class="font-medium text-l md:text-3xl mb-2">{{ resultsHeader(resultLength) }}</h2>
+  <h1 class="font-medium text-l md:text-3xl mb-2">{{ resultsHeader(resultLength) }}</h1>
   <ul class="grid grid-flow-cols grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-3 md:gap-y-8">
     <li v-for="row in rows" :key="row.node.id">
       <Products :product="row.node" />
@@ -9,6 +9,12 @@
   </ul>
 </div>
 </template>
+
+<script setup>
+useMeta({
+  title: 'Recommandations - Home'
+})
+</script>
 
 <script>
 export default {

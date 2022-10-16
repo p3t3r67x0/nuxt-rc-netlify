@@ -8,7 +8,7 @@
         </div>
       </a>
       <div class="flex items-center space-x-2 lg:hidden">
-        <button c-click-outside="closeNavmenu" @click.stop="toggleNavmenu" class="p-1 rounded-md hover:bg-gray-800 focus:bg-gray-800 focus:outline-none">
+        <button type="button" c-click-outside="closeNavmenu" @click.stop="toggleNavmenu" class="p-1 rounded-md hover:bg-gray-800 focus:bg-gray-800 focus:outline-none">
           <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-sky-100">
             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
           </svg>
@@ -41,7 +41,7 @@
       <div class="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:space-x-6 xl:space-x-8 lg:items-center">
         <div class="relative inline-block hidden lg:block">
           <div>
-            <button class="text-gray-100 hover:text-sky-300 transition-colors duration-300 flex items-center space-x-1 focus:outline-none">
+            <button type="button" class="text-gray-100 hover:text-sky-300 transition-colors duration-300 flex items-center space-x-1 focus:outline-none">
               <span>Products</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
